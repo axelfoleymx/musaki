@@ -1,0 +1,1112 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Musaki · Clase muestra gratis</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Clases de música para peques de 1 a 3 años en Plaza Murano, Cancún. Mamá, papá o un adulto acompañante participan toda la clase. Agenda tu clase muestra gratis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@600;700&family=Quicksand:wght@500;600;700&display=swap">
+<style>
+/* Layout: estilo claro del manual Musaki. Cielo + nubes inflables como en los reels, cápsulas kawaii,
+   polaroids de clases reales, franjas de 4 colores como hilo conductor y el colibrí como guía de la página. */
+:root{
+  color-scheme:light;
+  --blue:#14A3D9;      /* corporativo */
+  --sun:#FFB132;       /* corporativo */
+  --leaf:#92D050;      /* complementario */
+  --berry:#E4007D;     /* complementario */
+  --ink:#0B4A69;       /* texto: azul corporativo oscurecido */
+  --ink-2:#47738A;
+  --sky:#E7F6FC;
+  --sky-2:#C9ECF9;
+  --paper:#FFFFFF;
+  --cream:#FFF8EC;
+  --line:#D5ECF6;
+  --wa:#1FAF57;
+  --shadow:0 18px 40px -20px rgba(11,74,105,.35);
+  --display:"Lilita One","Arial Rounded MT Bold","Trebuchet MS",sans-serif;
+  --body:"Quicksand","Century Gothic","Trebuchet MS",sans-serif;
+  --label:"Poppins","Century Gothic","Trebuchet MS",sans-serif;
+  --r-lg:30px;--r-md:20px;--r-sm:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;font-weight:500;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:90;background:var(--paper)}
+img,video{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.06;letter-spacing:.2px;text-wrap:balance;margin:0;color:var(--ink)}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band{padding-block:clamp(64px,8vw,104px);position:relative}
+.band.sky{background:var(--sky)}
+.band.cream{background:var(--cream)}
+
+/* Elementos de marca */
+.stripes{display:flex;height:12px;border-radius:999px;overflow:hidden;width:180px}
+.stripes i{flex:1}
+.stripes i:nth-child(1){background:var(--berry)}.stripes i:nth-child(2){background:var(--leaf)}
+.stripes i:nth-child(3){background:var(--blue)}.stripes i:nth-child(4){background:var(--sun)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--label);font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.eyebrow img{width:18px}
+.h2{font-size:clamp(34px,4.6vw,54px)}
+.lead{font-size:clamp(17px,1.6vw,19px);color:var(--ink-2);max-width:60ch}
+.head{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(30px,4vw,48px)}
+.head.center{align-items:center;text-align:center}
+.pill-hl{display:inline-block;background:var(--berry);color:#fff;padding:.02em .38em .1em;border-radius:999px;box-shadow:0 0 0 .1em #fff,0 .16em 0 .1em var(--ink);transform:rotate(-3deg);margin:0 .08em}
+.pill-hl.sun{background:var(--sun);color:var(--ink)}
+.pill-hl.blue{background:var(--blue)}
+.pill-hl.leaf{background:var(--leaf);color:var(--ink)}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-size:20px;letter-spacing:.3px;border:0;border-radius:999px;padding:14px 28px 16px;cursor:pointer;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease;line-height:1.1}
+.btn:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--berry);outline-offset:3px}
+.btn-sun{background:var(--sun);color:var(--ink);box-shadow:0 6px 0 #D98E12,0 14px 24px -10px rgba(217,142,18,.9)}
+.btn-sun:hover{transform:translateY(-2px)}
+.btn-sun:active{transform:translateY(4px);box-shadow:0 2px 0 #D98E12}
+.btn-ghost{background:var(--paper);color:var(--ink);border:3px solid var(--line);font-size:18px;padding:11px 22px 13px}
+.btn-ghost:hover{border-color:var(--blue)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 0 #158A43}
+.btn-wa:hover{transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;flex:none}
+
+/* Barra de progreso de 4 colores (como en los reels) */
+.progress{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:6px;width:100%;z-index:95;display:flex;transform-origin:0 50%;transform:scaleX(var(--p,0))}
+.progress i{flex:1}
+.progress i:nth-child(1){background:var(--berry)}.progress i:nth-child(2){background:var(--leaf)}.progress i:nth-child(3){background:var(--blue)}.progress i:nth-child(4){background:var(--sun)}
+
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:80;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:2px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.top .brand img{height:50px;width:auto}
+.nav{display:flex;gap:26px;align-items:center}
+.nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px}
+.nav a:hover{color:var(--blue)}
+.top .btn{padding:10px 18px 12px;font-size:17px}
+@media (max-width:900px){.nav{display:none}}
+@media (max-width:420px){.top .btn{font-size:15px;padding:9px 14px 11px}}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#BFE7F8 0%,var(--sky) 45%,var(--paper) 100%);padding-block:clamp(36px,5vw,64px) clamp(70px,8vw,110px)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4vw,56px);align-items:start}
+@media (max-width:940px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}
+.hero-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero h1{font-size:clamp(44px,6.4vw,82px)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.tags li{display:flex;align-items:center;gap:8px;background:var(--paper);border-radius:999px;padding:8px 16px;font-weight:700;font-size:15px;box-shadow:0 4px 0 var(--line)}
+.tags li i{width:12px;height:12px;border-radius:50%;flex:none}
+/* nubes inflables */
+.cloud{position:absolute;pointer-events:none;z-index:1;filter:drop-shadow(0 10px 14px rgba(11,74,105,.10));animation:drift 38s linear infinite}
+.cloud span{position:absolute;background:#fff;border-radius:50%;box-shadow:inset -10px -12px 0 #E3F3FA}
+@keyframes drift{from{transform:translateX(-30px)}50%{transform:translateX(40px)}to{transform:translateX(-30px)}}
+/* collage de polaroids */
+.collage{position:relative;height:clamp(300px,34vw,400px);margin-top:6px}
+.pola{position:absolute;background:#fff;padding:10px 10px 38px;border-radius:6px;box-shadow:var(--shadow);transition:transform .35s ease}
+.pola img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+.pola figcaption{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-family:var(--display);font-size:17px;color:var(--ink)}
+.pola .tape{position:absolute;top:-10px;left:50%;width:76px;height:22px;margin-left:-38px;opacity:.85;border-radius:3px;transform:rotate(-4deg)}
+.pola:hover{transform:rotate(0deg) scale(1.03)!important;z-index:5}
+.c1{left:0;top:16px;width:46%;height:82%;transform:rotate(-5deg)}
+.c2{left:30%;top:0;width:40%;height:74%;transform:rotate(4deg);z-index:2}
+.c3{right:0;top:40px;width:38%;height:80%;transform:rotate(-2deg)}
+.collage .mascot-note{position:absolute;left:-14px;bottom:-34px;width:clamp(110px,13vw,150px);z-index:4;animation:dance .7s ease-in-out infinite alternate;transform-origin:50% 100%}
+@keyframes dance{from{transform:rotate(-8deg) translateY(0)}to{transform:rotate(8deg) translateY(-14px)}}
+@media (max-width:560px){.collage{height:300px}.c1{width:52%}.c2{left:34%;width:44%}.c3{display:none}}
+
+/* Formulario */
+.form-card{position:relative;background:var(--paper);border-radius:var(--r-lg);box-shadow:0 22px 50px -24px rgba(11,74,105,.45);padding:clamp(24px,3vw,34px);padding-top:clamp(30px,3.4vw,40px);display:flex;flex-direction:column;gap:16px;min-width:0;overflow:visible}
+.form-card .bar{position:absolute;left:0;right:0;top:0;height:14px;border-radius:var(--r-lg) var(--r-lg) 0 0;overflow:hidden;display:flex}
+.form-card .bar i{flex:1}
+.form-card .bar i:nth-child(1){background:var(--berry)}.form-card .bar i:nth-child(2){background:var(--leaf)}.form-card .bar i:nth-child(3){background:var(--blue)}.form-card .bar i:nth-child(4){background:var(--sun)}
+.form-card h2{font-size:clamp(30px,3.2vw,38px)}
+.form-card .sub{color:var(--ink-2);font-size:15px}
+.badge-free{position:absolute;right:-12px;top:-22px;width:94px;height:94px;border-radius:50%;background:var(--berry);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--display);font-size:22px;line-height:1;box-shadow:0 0 0 6px #fff,0 10px 24px -6px rgba(228,0,125,.6);transform:rotate(12deg);animation:wobble 3s ease-in-out infinite}
+.badge-free small{display:block;font-family:var(--label);font-size:10px;letter-spacing:.12em;margin-top:2px}
+@keyframes wobble{0%,100%{transform:rotate(12deg) scale(1)}50%{transform:rotate(4deg) scale(1.06)}}
+form{display:flex;flex-direction:column;gap:14px}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+@media (max-width:460px){.row2{grid-template-columns:minmax(0,1fr)}}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label,.field legend{font-weight:700;font-size:14px;color:var(--ink)}
+input[type=text],select{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--sky);border:2px solid transparent;border-radius:var(--r-sm);padding:12px 14px;transition:border-color .2s,background .2s}
+input[type=text]:focus,select:focus{border-color:var(--blue);background:#fff;outline:none}
+input::placeholder{color:#8AB2C4}
+fieldset{border:0;padding:0;margin:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip-input{position:absolute;opacity:0;pointer-events:none}
+.chips label{cursor:pointer;border:2px solid var(--line);border-radius:16px;padding:8px 14px;font-weight:700;font-size:14px;line-height:1.25;background:#fff;transition:all .18s}
+.chips label small{display:block;font-weight:600;font-size:12px;color:var(--ink-2)}
+.chips label:hover{border-color:var(--blue)}
+.chip-input:checked+label{border-color:var(--blue);background:var(--blue);color:#fff;transform:rotate(-2deg)}
+.chip-input:checked+label small{color:#E3F6FD}
+.chip-input:focus-visible+label{outline:3px solid var(--berry);outline-offset:2px}
+.chips-note{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13.5px;font-weight:700;line-height:1.35;background:#FFF4DC;border-radius:12px;padding:8px 12px;margin:4px 0 6px}
+.star-b{display:inline-flex;align-items:center;gap:4px;background:var(--sun);color:var(--ink);border-radius:999px;padding:2px 10px 3px;font-size:12px;font-weight:700;white-space:nowrap}
+.chips label.rec{border-color:var(--sun);position:relative}
+.chips label.rec::after{content:"★";position:absolute;top:-10px;right:-8px;width:22px;height:22px;border-radius:50%;background:var(--sun);color:#fff;font-size:12px;display:grid;place-items:center;line-height:1;box-shadow:0 2px 0 #D98E12}
+.chips .sep{flex-basis:100%;font-size:12.5px;font-weight:700;color:var(--ink-2);margin-top:2px}
+.tags li.hot{background:var(--sun);box-shadow:0 4px 0 #D98E12}
+.precio.rec{position:relative;background:#FFF4DC;border-radius:18px;padding:14px 14px 12px;margin:-10px -6px;outline:3px solid var(--sun)}
+.precio.rec .star-b{align-self:flex-start;margin-bottom:2px}
+.slot.rec{background:#FFF4DC;border-top:0;border-radius:18px;padding:14px;margin:6px 0 4px;outline:3px solid var(--sun)}
+.slot.rec .star-b{margin-bottom:4px}
+.err{color:var(--berry);font-weight:700;font-size:14px}
+.form-foot{font-size:13px;color:var(--ink-2);text-align:center}
+[hidden]{display:none!important}
+.ok{display:flex;flex-direction:column;gap:14px}
+.ok .msg{background:var(--sky);border-radius:var(--r-md);padding:14px 16px;font-size:15px;white-space:pre-line}
+.copy-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:15px}
+.copy-row strong{font-variant-numeric:tabular-nums;user-select:all}
+.linkbtn{background:none;border:0;color:var(--blue);font:inherit;font-weight:700;cursor:pointer;text-decoration:underline;padding:0}
+.hand-arrow{position:absolute;left:-150px;top:110px;width:150px;pointer-events:none;z-index:3}
+.hand-arrow span{position:absolute;left:-6px;top:-44px;font-family:var(--display);font-size:20px;color:var(--berry);transform:rotate(-8deg);white-space:nowrap}
+@media (max-width:940px){.hand-arrow{display:none}}
+
+/* Colibrí */
+.fly-layer{position:absolute;inset:0;pointer-events:none;z-index:6;overflow:visible}
+.fly-layer svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.trail{fill:none;stroke:var(--sun);stroke-width:5;stroke-linecap:round;stroke-dasharray:2 12;opacity:.9}
+#colibri{position:absolute;left:0;top:0;width:clamp(92px,13vw,170px);pointer-events:auto;cursor:pointer;will-change:transform;filter:drop-shadow(0 12px 16px rgba(11,74,105,.25));z-index:7;background:none;border:0;padding:0}
+#colibri img{width:100%;transform-origin:50% 55%;animation:flap .16s ease-in-out infinite alternate}
+@keyframes flap{from{transform:scaleY(1) rotate(0deg)}to{transform:scaleY(.94) rotate(-2deg)}}
+.spark-note{position:absolute;width:26px;pointer-events:none;animation:noteup 1.4s ease-out forwards;z-index:6}
+@keyframes noteup{from{opacity:1;transform:translate(0,0) rotate(0) scale(.6)}to{opacity:0;transform:translate(var(--dx,10px),-70px) rotate(25deg) scale(1)}}
+
+/* Lo esencial */
+.esencial{position:relative;margin-top:-56px;z-index:3}
+.esencial .grid{background:var(--paper);border-radius:var(--r-lg);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(5,minmax(0,1fr));overflow:hidden}
+@media (max-width:1000px){.esencial .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.esencial .grid{grid-template-columns:minmax(0,1fr)}}
+.fact{display:flex;gap:12px;padding:20px;align-items:flex-start;border-right:2px dashed var(--line);min-width:0}
+.fact:last-child{border-right:0}
+@media (max-width:1000px){.fact{border-right:0;border-bottom:2px dashed var(--line)}.fact:last-child{border-bottom:0}}
+.fact .ico{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;flex:none;color:#fff}
+.fact .ico svg{width:24px;height:24px}
+.fact b{display:block;font-family:var(--label);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.fact span{font-weight:700;font-size:15px;line-height:1.4}
+.precios{margin-top:16px;background:var(--paper);border:3px dashed var(--sun);border-radius:var(--r-lg);padding:22px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.precios{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:440px){.precios{grid-template-columns:minmax(0,1fr)}}
+.precio{display:flex;flex-direction:column;gap:4px}
+.precio .n{font-family:var(--display);font-size:34px;line-height:1;font-variant-numeric:tabular-nums}
+.precio .n small{font-family:var(--body);font-size:14px;font-weight:700;color:var(--ink-2)}
+.precio .t{font-weight:700}
+.precio .d{font-size:14px;color:var(--ink-2)}
+.precio.free .n{color:var(--berry)}
+
+/* Así se vive una clase */
+.vive .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px);align-items:center}
+@media (max-width:900px){.vive .wrap{grid-template-columns:minmax(0,1fr)}}
+.phone-wrap{position:relative;justify-self:center;width:min(320px,80vw)}
+.phone{position:relative;border-radius:42px;background:var(--ink);padding:12px;box-shadow:0 30px 60px -24px rgba(11,74,105,.55);transform:rotate(-3deg)}
+.phone video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:32px;background:var(--sky-2)}
+.phone .sound{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);border:0;border-radius:999px;padding:9px 16px;font-family:var(--display);font-size:16px;cursor:pointer;box-shadow:0 6px 0 var(--line)}
+.phone .sound svg{width:18px;height:18px}
+.phone-wrap .kid{position:absolute;right:-62px;bottom:-30px;width:150px;animation:bob 1.2s ease-in-out infinite alternate}
+.phone-wrap .lbl{position:absolute;left:-30px;top:40px;background:var(--sun);color:var(--ink);font-family:var(--display);font-size:18px;padding:6px 14px 8px;border-radius:999px;transform:rotate(-8deg);box-shadow:0 0 0 4px #fff}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-12px)}}
+@media (max-width:520px){.phone-wrap .kid{right:-24px;width:110px}.phone-wrap .lbl{left:-8px}}
+.pillars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (max-width:520px){.pillars{grid-template-columns:minmax(0,1fr)}}
+.pillar{position:relative;background:var(--paper);border-radius:var(--r-lg);padding:22px 22px 22px 112px;min-height:126px;display:flex;flex-direction:column;justify-content:center;gap:4px;box-shadow:0 6px 0 var(--line);transition:transform .25s ease}
+.pillar:hover{transform:translateY(-4px) rotate(-.6deg)}
+.pillar .ph{position:absolute;left:16px;top:50%;width:80px;height:80px;margin-top:-40px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 5px var(--c),0 0 0 9px #fff}
+.pillar .ph img{width:100%;height:100%;object-fit:cover}
+.pillar h3{font-size:28px;color:var(--c2,var(--ink))}
+.pillar p{color:var(--ink-2);font-size:15px;line-height:1.5}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}
+@media (max-width:620px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stat{background:var(--paper);border-radius:var(--r-md);padding:14px 16px;text-align:center}
+.stat .n{font-family:var(--display);font-size:clamp(34px,4vw,44px);line-height:1;color:var(--blue);font-variant-numeric:tabular-nums}
+.stat p{font-weight:700;font-size:14px}
+
+/* Divisores de nubes */
+.clouds-div{position:relative;height:60px;margin-top:-59px;z-index:2;pointer-events:none}
+.clouds-div svg{position:absolute;left:0;bottom:0;width:100%;height:60px}
+
+/* Xilófono */
+.toca .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
+@media (max-width:860px){.toca .wrap{grid-template-columns:minmax(0,1fr)}}
+.xilo{position:relative;display:flex;align-items:center;justify-content:center;gap:clamp(6px,1.2vw,12px);padding:30px 18px;background:var(--paper);border-radius:var(--r-lg);box-shadow:var(--shadow);min-height:300px}
+.xilo::before,.xilo::after{content:"";position:absolute;left:8%;right:8%;height:12px;border-radius:6px;background:#D9A867}
+.xilo::before{top:34%}.xilo::after{bottom:34%}
+.xbar{position:relative;z-index:1;width:clamp(26px,5.4vw,54px);border:0;border-radius:14px;cursor:pointer;box-shadow:inset 0 -7px 0 rgba(0,0,0,.14);transition:transform .08s ease,filter .2s}
+.xbar:hover{filter:brightness(1.06)}
+.xbar.hit{transform:translateY(5px) scale(.97)}
+.xbar span{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-family:var(--display);font-size:14px;color:rgba(11,74,105,.8)}
+.fly-note{position:absolute;width:30px;pointer-events:none;animation:up 1.1s ease-out forwards;z-index:2}
+@keyframes up{from{opacity:1;transform:translateY(0) rotate(0)}to{opacity:0;transform:translateY(-130px) rotate(18deg)}}
+.hint{font-size:14px;color:var(--ink-2);margin-top:4px}
+.toca .note-mascot{width:130px;margin-top:8px;animation:dance .7s ease-in-out infinite alternate;transform-origin:50% 100%}
+
+/* Desarrollo */
+.dev{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+@media (max-width:860px){.dev{grid-template-columns:minmax(0,1fr)}}
+.areas{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.areas li{display:flex;align-items:center;gap:14px;background:var(--paper);border-radius:999px;padding:12px 20px;font-weight:700;font-size:17px;box-shadow:0 5px 0 var(--line)}
+.areas li i{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 0 4px #fff,0 0 0 6px currentColor}
+.path{display:flex;flex-direction:column;position:relative}
+.step{display:grid;grid-template-columns:62px minmax(0,1fr);gap:16px;padding-bottom:22px;position:relative}
+.step:not(:last-of-type)::before{content:"";position:absolute;left:30px;top:62px;bottom:0;border-left:3px dashed var(--sky-2)}
+.step .num{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-family:var(--label);font-weight:700;font-size:22px;color:#fff;box-shadow:0 0 0 5px #fff}
+.step .card{background:#FBF7EE;border-radius:var(--r-md);padding:16px 20px;box-shadow:0 6px 0 rgba(11,74,105,.10);transform:rotate(-.8deg)}
+.step:nth-of-type(2) .card{transform:rotate(.8deg)}
+.step h3{font-size:26px}
+.step small{display:block;font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.step p{color:var(--ink-2);font-size:16px}
+.credit{font-size:14px;color:var(--ink-2)}
+
+/* Tabs */
+.tablist{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.tab{font-family:var(--display);font-size:19px;border:3px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:9px 20px 11px;cursor:pointer;transition:all .2s}
+.tab[aria-selected="true"]{background:var(--blue);color:#fff;border-color:var(--blue);transform:rotate(-2deg)}
+.panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3.5vw,44px);align-items:center;background:var(--paper);border-radius:var(--r-lg);padding:clamp(16px,2.6vw,28px);box-shadow:var(--shadow)}
+@media (max-width:860px){.panel{grid-template-columns:minmax(0,1fr)}}
+.panel .pola{position:relative;inset:auto;transform:rotate(-2deg);height:auto}
+.panel .pola img{aspect-ratio:4/3.4}
+.panel .tx{display:flex;flex-direction:column;gap:14px;min-width:0}
+.panel h3{font-size:clamp(28px,3.2vw,38px)}
+.checks{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.checks li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start}
+.checks li svg{width:26px;height:26px;margin-top:1px}
+.mini{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:440px){.mini{grid-template-columns:minmax(0,1fr)}}
+.mini div{background:var(--sky);border-radius:var(--r-sm);padding:12px 14px}
+.mini b{display:block;font-family:var(--label);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.mini span{font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+
+/* Galería real */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:8px}
+@media (max-width:860px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.gallery .pola{position:relative;inset:auto;height:auto}
+.gallery .pola img{aspect-ratio:3/4}
+.gallery .pola:nth-child(odd){transform:rotate(-2.5deg)}
+.gallery .pola:nth-child(even){transform:rotate(2deg) translateY(14px)}
+.comm{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:56px}
+@media (max-width:860px){.comm{grid-template-columns:minmax(0,1fr)}}
+.comm article{background:var(--paper);border-radius:var(--r-lg);padding:26px;display:flex;flex-direction:column;gap:10px;box-shadow:0 6px 0 var(--line)}
+.comm .dot{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff}
+.comm .dot svg{width:26px;height:26px}
+.comm h3{font-size:26px}
+.comm p{color:var(--ink-2);font-size:16px}
+.quote{margin-top:42px;text-align:center;font-family:var(--display);font-size:clamp(28px,3.6vw,44px);line-height:1.2;max-width:22ch;margin-inline:auto}
+
+/* Horarios y ubicación */
+.visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+@media (max-width:860px){.visit{grid-template-columns:minmax(0,1fr)}}
+.box{background:var(--paper);border-radius:var(--r-lg);padding:clamp(20px,3vw,30px);display:flex;flex-direction:column;gap:14px;min-width:0;box-shadow:var(--shadow)}
+.box h3{font-size:32px}
+.slot{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;padding:14px 0;border-top:2px dashed var(--line)}
+.slot .day{font-family:var(--display);font-size:20px;color:#fff;border-radius:16px;padding:8px 14px 10px;text-align:center;min-width:120px}
+.slot p{font-weight:700}
+.slot small{display:block;color:var(--ink-2);font-weight:600}
+.map{position:relative;border-radius:var(--r-md);overflow:hidden;aspect-ratio:16/9;max-width:100%;background:#F4EFE3}
+.map svg{width:100%;height:100%;display:block}
+.map .pin{position:absolute;left:50%;top:44%;width:62px;margin-left:-31px;margin-top:-80px;animation:pin 1.8s ease-in-out infinite}
+@keyframes pin{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.addr{font-weight:700;font-size:16px}
+.addr small{display:block;font-weight:600;color:var(--ink-2)}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:40px;align-items:start}
+@media (max-width:860px){.faq-grid{grid-template-columns:minmax(0,1fr)}.faq-grid .bird-side{display:none}}
+.faq{display:flex;flex-direction:column;gap:12px}
+details{background:var(--paper);border-radius:var(--r-md);padding:4px 22px;box-shadow:0 5px 0 var(--line);transition:box-shadow .2s}
+details[open]{box-shadow:0 5px 0 var(--sky-2)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 0;font-weight:700;font-size:17px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;width:34px;height:34px;border-radius:50%;background:var(--sun);display:grid;place-items:center;font-family:var(--display);font-size:24px;line-height:1;color:var(--ink);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg);background:var(--berry);color:#fff}
+details .a{padding:0 0 16px;color:var(--ink-2)}
+details .a strong{color:var(--ink)}
+.bird-side{position:sticky;top:120px}
+.bird-side img{animation:bob 1.4s ease-in-out infinite alternate}
+
+/* CTA final con logo estilo kumori */
+.final{background:linear-gradient(180deg,#5DBDEA 0%,#BDE5F7 38%,var(--sky) 70%,var(--paper) 100%);position:relative;overflow:hidden;padding-block:clamp(70px,9vw,120px)}
+.final .wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
+.final h2{font-size:clamp(36px,5vw,60px)}
+.final p{max-width:52ch;color:var(--ink-2);font-size:18px}
+.logo-build{position:relative;width:min(420px,78vw);aspect-ratio:1401/1060}
+.logo-build img{position:absolute;max-width:none}
+.logo-build .bub{position:absolute;border-radius:50%;background:var(--sun);box-shadow:inset -10px -12px 0 #E8901E,inset 8px 8px 0 #FFD98A;opacity:0}
+.logo-shadow{width:min(260px,50vw);height:22px;border-radius:50%;background:rgba(11,74,105,.12);filter:blur(5px);margin-top:-10px}
+.play .lb-bub{animation:bubIn .5s cubic-bezier(.3,1.6,.5,1) both,bubMerge .35s ease-in both;animation-delay:var(--d),calc(.75s + var(--d2))}
+@keyframes bubIn{from{opacity:1;transform:scale(0)}to{opacity:1;transform:scale(1)}}
+@keyframes bubMerge{to{opacity:0;transform:translate(var(--mx),var(--my)) scale(.1)}}
+.play .lb-note{animation:noteIn 1s cubic-bezier(.2,1.8,.4,1) both;animation-delay:1s;transform-origin:50% 90%}
+@keyframes noteIn{0%{transform:scale(0,0)}40%{transform:scale(1.15,.85)}70%{transform:scale(.95,1.05)}100%{transform:scale(1)}}
+.play .lb-bird{animation:birdIn 1s cubic-bezier(.2,.8,.3,1) both;animation-delay:1.3s}
+@keyframes birdIn{from{transform:translate(-340%,-260%) rotate(-25deg);opacity:1}to{transform:none;opacity:1}}
+.play .lb-tulip{animation:pop .45s cubic-bezier(.3,1.8,.5,1) both;animation-delay:2.1s;transform-origin:50% 100%}
+.play .lb-l{animation:pop .5s cubic-bezier(.3,1.8,.5,1) both;animation-delay:calc(2s + var(--i)*.15s);transform-origin:50% 100%}
+@keyframes pop{from{transform:scale(0) translateY(30%)}to{transform:none}}
+.play .lb-tag{animation:reveal .6s ease-out both;animation-delay:3.1s}
+@keyframes reveal{from{clip-path:inset(0 50% 0 50%)}to{clip-path:inset(0 0 0 0)}}
+.logo-float{animation:float 3.4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.wa-pill{display:inline-flex;align-items:center;gap:18px;background:var(--wa);color:#fff;border-radius:999px;padding:12px 34px 12px 14px;text-decoration:none;box-shadow:0 0 0 7px #fff,0 10px 0 7px rgba(11,74,105,.18)}
+.wa-pill .ic{width:60px;height:60px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.wa-pill .ic svg{width:34px;height:34px}
+.wa-pill b{display:block;font-family:var(--label);font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.9;text-align:left}
+.wa-pill span{font-family:var(--display);font-size:clamp(30px,4vw,44px);line-height:1;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wa-pill:hover{transform:translateY(-2px)}
+.replay{background:none;border:0;color:var(--ink-2);font:inherit;font-weight:700;font-size:14px;cursor:pointer;text-decoration:underline}
+.final .mascots{position:absolute;inset:auto 0 0 0;height:0;z-index:1}
+.final .m-kid{position:absolute;left:4%;bottom:20px;width:clamp(110px,14vw,190px);animation:bob 1.1s ease-in-out infinite alternate}
+.final .m-note{position:absolute;right:4%;bottom:24px;width:clamp(100px,12vw,170px);animation:dance .7s ease-in-out infinite alternate;transform-origin:50% 100%}
+@media (max-width:640px){.final .m-kid,.final .m-note{opacity:.35}}
+.heart{position:absolute;bottom:-40px;width:34px;pointer-events:none;animation:rise 6s linear infinite;opacity:.85}
+@keyframes rise{from{transform:translateY(0) rotate(-10deg)}to{transform:translateY(-640px) rotate(14deg);opacity:0}}
+
+footer{padding-block:40px;background:var(--paper);border-top:2px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+footer .flogo{height:70px;width:auto}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;font-size:15px}
+footer .small{font-size:13px;color:var(--ink-2)}
+
+/* Burbuja WhatsApp */
+.wa-float{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:85;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.wa-btn{width:64px;height:64px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 0 0 5px #fff,0 12px 26px -8px rgba(31,175,87,.8);text-decoration:none;position:relative}
+.wa-btn::after{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid var(--wa);animation:ring 2.4s ease-out infinite}
+@keyframes ring{from{transform:scale(1);opacity:.8}to{transform:scale(1.55);opacity:0}}
+.wa-btn svg{width:34px;height:34px}
+.wa-tip{max-width:250px;background:var(--paper);color:var(--ink);border-radius:20px 20px 4px 20px;padding:12px 36px 12px 14px;box-shadow:var(--shadow);font-size:14px;font-weight:600;position:relative;animation:popTip .35s ease-out}
+.wa-tip b{display:block;font-size:13px;color:var(--wa)}
+.wa-tip button{position:absolute;top:6px;right:8px;background:none;border:0;font-size:20px;line-height:1;cursor:pointer;color:var(--ink-2)}
+@keyframes popTip{from{transform:translateY(8px) scale(.9);opacity:0}to{transform:none;opacity:1}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .fly-layer{display:none}
+}
+</style>
+
+<div class="progress" id="progress" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Musaki, ir al inicio"><img src="img/logo_color.png" alt="Musaki Comunidad Artística" width="66" height="50"></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#clase">Cómo es una clase</a>
+      <a href="#para-ti">Para ti</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="btn btn-sun" href="#agendar">Clase gratis</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="cloud" style="left:4%;top:30px;width:200px;height:90px;animation-duration:44s"><span style="left:0;top:40px;width:200px;height:50px;border-radius:30px"></span><span style="left:34px;top:4px;width:80px;height:80px"></span><span style="left:96px;top:18px;width:70px;height:70px"></span></div>
+  <div class="cloud" style="right:6%;top:12px;width:160px;height:72px;animation-duration:36s;animation-direction:reverse"><span style="left:0;top:32px;width:160px;height:40px;border-radius:24px"></span><span style="left:26px;top:2px;width:64px;height:64px"></span><span style="left:80px;top:14px;width:54px;height:54px"></span></div>
+  <div class="cloud" style="left:44%;bottom:40px;width:240px;height:100px;animation-duration:50s;opacity:.8"><span style="left:0;top:46px;width:240px;height:54px;border-radius:30px"></span><span style="left:40px;top:6px;width:94px;height:94px"></span><span style="left:118px;top:22px;width:80px;height:80px"></span></div>
+
+  <div class="fly-layer" id="fly-layer" aria-hidden="true">
+    <svg><path class="trail" id="trail" d=""/></svg>
+  </div>
+  <button id="colibri" type="button" aria-label="Colibrí de Musaki: tócalo para que vuele"><img src="img/bird.webp" alt="" width="520" height="485"></button>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><img src="img/note_orange.png" alt="" width="18" height="20">Clases de música · Plaza Murano, Cancún</span>
+      <h1>La música se aprende <span class="pill-hl">jugando</span> y en familia.</h1>
+      <p class="lead">Clases de música para peques de 1 a 3 años donde mamá, papá o un adulto acompañante participan toda la clase. Juego, movimiento y exploración sonora con nuestras misses.</p>
+      <ul class="tags">
+        <li class="hot"><i style="background:#fff"></i>Martes y viernes 4:00 p. m.</li>
+        <li><i style="background:var(--berry)"></i>Clase muestra gratis</li>
+        <li><i style="background:var(--blue)"></i>Grupos de 6 peques</li>
+        <li><i style="background:var(--sun)"></i>1 hora en familia</li>
+      </ul>
+      <div class="collage">
+        <figure class="pola c1" style="margin:0"><i class="tape" style="background:var(--leaf)"></i><img src="img/papa-bebe.webp" alt="Papá baila con su bebé en brazos durante una clase de Musaki"><figcaption>¡a bailar!</figcaption></figure>
+        <figure class="pola c2" style="margin:0"><i class="tape" style="background:var(--berry)"></i><img src="img/maracas.webp" alt="Niña explora maracas y cascabeles junto a otros peques"><figcaption>exploramos sonidos</figcaption></figure>
+        <figure class="pola c3" style="margin:0"><i class="tape" style="background:var(--sun)"></i><img src="img/mama-tul.webp" alt="Mamá juega con telas de colores en clase"><figcaption>en familia</figcaption></figure>
+        <img class="mascot-note" src="img/note.webp" alt="" aria-hidden="true" width="520" height="547">
+      </div>
+    </div>
+
+    <div class="form-card" id="agendar">
+      <div class="bar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="badge-free" aria-hidden="true"><div>Gratis<small>1ª CLASE</small></div></div>
+      <svg class="hand-arrow" viewBox="0 0 150 90" aria-hidden="true"><path d="M8 20 C 50 0, 110 10, 138 62" fill="none" stroke="#0B4A69" stroke-width="11" stroke-linecap="round"/><path d="M8 20 C 50 0, 110 10, 138 62" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M116 52 L138 64 L142 40" fill="none" stroke="#0B4A69" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M116 52 L138 64 L142 40" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h2>Agenda tu clase muestra</h2>
+      <p class="sub">Llena tus datos y confirmamos tu lugar por WhatsApp con miss Deya.</p>
+      <form id="lead" novalidate>
+        <div class="row2">
+          <div class="field">
+            <label for="f-nombre">Tu nombre</label>
+            <input type="text" id="f-nombre" name="nombre" autocomplete="given-name" placeholder="Ej. Vania" required>
+          </div>
+          <div class="field">
+            <label for="f-rol">Tú eres</label>
+            <select id="f-rol" name="rol">
+              <option value="mamá">Mamá</option>
+              <option value="papá">Papá</option>
+              <option value="abuela">Abuela</option>
+              <option value="abuelo">Abuelo</option>
+              <option value="tía">Tía</option>
+              <option value="tío">Tío</option>
+              <option value="familiar">Otro familiar</option>
+            </select>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="f-peque">Nombre de tu peque</label>
+            <input type="text" id="f-peque" name="peque" placeholder="Ej. Vida Leonora" required>
+          </div>
+          <div class="field">
+            <label for="f-edad">Edad de tu peque</label>
+            <select id="f-edad" name="edad">
+              <option value="">Elige una opción</option>
+              <option>1 año</option>
+              <option>1 año y medio</option>
+              <option>2 años</option>
+              <option>2 años y medio</option>
+              <option>3 años</option>
+            </select>
+          </div>
+        </div>
+        <div class="field" id="acomp-wrap" hidden>
+          <label for="f-acomp">¿Quién acompañará a tu peque a la clase?</label>
+          <select id="f-acomp" name="acomp">
+            <option value="yo">Yo lo acompaño</option>
+            <option value="mamá o papá">Su mamá o su papá</option>
+            <option value="ambos">Vamos juntos (pueden entrar hasta 2 adultos)</option>
+          </select>
+        </div>
+        <fieldset class="field">
+          <legend>Elige el día de tu clase muestra</legend>
+          <p class="chips-note"><span class="star-b">★ Recomendado</span>Martes y viernes a las 4:00 p. m.: el grupo de dos clases por semana.</p>
+          <div class="chips" id="f-fechas"></div>
+        </fieldset>
+        <p class="err" id="f-err" role="alert" hidden></p>
+        <button class="btn btn-sun" type="submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.7-5.2A8.5 8.5 0 1 1 21 12Z"/><path d="M9 10h.01M12 10h.01M15 10h.01"/></svg>
+          Agendar mi clase gratis
+        </button>
+        <p class="form-foot">Sin costo. Te respondemos por WhatsApp al 55 5461 4560.</p>
+      </form>
+      <div class="ok" id="ok" hidden>
+        <h2 id="ok-title">¡Casi listo!</h2>
+        <p>Envía este mensaje a miss Deya por WhatsApp para confirmar el lugar de tu peque.</p>
+        <p class="msg" id="ok-msg"></p>
+        <a class="btn btn-wa" id="ok-link" href="https://wa.me/525554614560" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.7-5.2A8.5 8.5 0 1 1 21 12Z"/></svg>
+          Enviar por WhatsApp
+        </a>
+        <div class="copy-row">¿No se abrió? Escríbenos al <strong id="tel">55 5461 4560</strong> <button class="linkbtn" type="button" data-copy="55 5461 4560">Copiar número</button></div>
+        <button class="linkbtn" type="button" id="ok-back">Cambiar mis datos</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LO ESENCIAL -->
+<section class="esencial" aria-labelledby="esencial-t">
+  <div class="wrap">
+    <h2 id="esencial-t" class="eyebrow" style="margin-bottom:12px;position:relative">Lo esencial</h2>
+    <div class="grid">
+      <div class="fact"><div class="ico" style="background:var(--berry)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><b>Dónde</b><span>Plaza Murano, Av. Huayacán</span></div></div>
+      <div class="fact"><div class="ico" style="background:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div><b>Cuándo</b><span><strong>Martes y viernes 4:00 p. m.</strong> · también sábados 11:00 a. m.</span></div></div>
+      <div class="fact"><div class="ico" style="background:var(--leaf)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg></div><div><b>Duración</b><span>1 hora, con mamá, papá o acompañante</span></div></div>
+      <div class="fact"><div class="ico" style="background:var(--sun)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6l1 4H8l1-4ZM8 7h8v12a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V7Z"/></svg></div><div><b>Qué llevar</b><span>Ropa cómoda, calcetitas antiderrapantes y termo con agua</span></div></div>
+      <div class="fact"><div class="ico" style="background:var(--berry)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div><div><b>Inversión</b><span>Clase muestra gratis.</span> <button class="linkbtn" type="button" data-precios aria-expanded="false" aria-controls="precios">Ver precios</button></div></div>
+    </div>
+    <div class="precios" id="precios" hidden>
+      <div class="precio free"><span class="t">Clase muestra</span><span class="n">Gratis</span><span class="d">Para conocernos antes de decidir.</span></div>
+      <div class="precio rec"><span class="star-b">★ Recomendado</span><span class="t">Dos clases a la semana</span><span class="n">$2,500 <small>al mes</small></span><span class="d">Martes y viernes, 4:00 a 5:00 p. m. Más música, más práctica.</span></div>
+      <div class="precio"><span class="t">Una clase a la semana</span><span class="n">$1,400 <small>al mes</small></span><span class="d">Sábados, 11:00 a. m. a 12:00 p. m.</span></div>
+      <div class="precio"><span class="t">Inscripción</span><span class="n">$800</span><span class="d">Incluye kit de bienvenida.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ASÍ SE VIVE UNA CLASE -->
+<section class="band vive" id="clase">
+  <div class="wrap">
+    <div class="phone-wrap">
+      <span class="lbl">Clase real en Musaki</span>
+      <div class="phone">
+        <video id="reel" src="media/reel-clase.mp4" poster="media/reel-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Video: así se vive una clase de música en Musaki"></video>
+        <button class="sound" type="button" id="sound"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span>Activar sonido</span></button>
+      </div>
+      <img class="kid" src="img/kid.webp" alt="" aria-hidden="true" width="520" height="490">
+    </div>
+    <div>
+      <div class="head">
+        <div class="stripes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <h2 class="h2">Una hora de música, juego y <span class="pill-hl sun">abrazos</span>.</h2>
+        <p class="lead">Cada clase es un juego planeado con intención pedagógica. Las misses guían, y tú participas con tu peque de principio a fin: cantan, se mueven, exploran instrumentos y escuchan juntos.</p>
+      </div>
+      <div class="pillars">
+        <article class="pillar" style="--c:var(--blue);--c2:var(--blue)"><div class="ph"><img src="img/canasta.webp" alt="Peques exploran instrumentos de una canasta" loading="lazy"></div><h3>Sonido</h3><p>Exploran sonidos, canciones y ritmos con instrumentos hechos para manos pequeñas.</p></article>
+        <article class="pillar" style="--c:var(--sun);--c2:#D98E12"><div class="ph"><img src="img/tul-nino.webp" alt="Niño se mueve con una tela amarilla" loading="lazy"></div><h3>Movimiento</h3><p>Brincan, gatean y bailan: el cuerpo también escucha la música.</p></article>
+        <article class="pillar" style="--c:var(--leaf);--c2:#5E9A22"><div class="ph"><img src="img/aros.webp" alt="Niñas juegan con aros de colores" loading="lazy"></div><h3>Juego</h3><p>Todo es juego, y en cada juego hay un aprendizaje planeado.</p></article>
+        <article class="pillar" style="--c:var(--berry);--c2:var(--berry)"><div class="ph"><img src="img/mama-baila.webp" alt="Mamá baila con su peque en brazos" loading="lazy"></div><h3>Conexión</h3><p>Tú participas en toda la clase: el vínculo con tu peque crece con cada canción.</p></article>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="n">1 a 3</div><p>años de edad</p></div>
+        <div class="stat"><div class="n">6</div><p>peques por grupo</p></div>
+        <div class="stat"><div class="n">2</div><p>adultos por peque, máximo</p></div>
+        <div class="stat"><div class="n">60</div><p>minutos de clase</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- XILÓFONO -->
+<div class="clouds-div" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 V40 Q40 10 90 34 Q130 0 190 28 Q240 8 290 36 Q350 4 410 30 Q470 0 530 34 Q590 10 640 30 Q700 2 760 34 Q820 6 880 30 Q940 0 1000 34 Q1060 10 1110 30 Q1160 8 1200 36 V60 Z" fill="#E7F6FC"/></svg></div>
+<section class="band sky toca" aria-labelledby="toca-t">
+  <div class="wrap">
+    <div class="head" style="margin:0">
+      <span class="eyebrow"><img src="img/note_orange.png" alt="" width="18" height="20">Pruébalo con tu peque</span>
+      <h2 class="h2" id="toca-t">Toca el <span class="pill-hl leaf">xilófono</span>.</h2>
+      <p class="lead">Así empieza la educación musical a esta edad: escuchar, imitar y descubrir que cada barra suena distinto. Toca las barras o usa las teclas del 1 al 8.</p>
+      <p class="hint">Sube el volumen de tu teléfono.</p>
+      <img class="note-mascot" src="img/note.webp" alt="" aria-hidden="true" width="520" height="547">
+    </div>
+    <div class="xilo" id="xilo" role="group" aria-label="Xilófono de ocho notas"></div>
+  </div>
+</section>
+
+<!-- DESARROLLO -->
+<section class="band" aria-labelledby="dev-t">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow"><img src="img/note_orange.png" alt="" width="18" height="20">Proyecto formativo Musaki</span>
+      <h2 class="h2" id="dev-t">Lo que crece en tu peque.</h2>
+      <p class="lead">La música es el camino. Cada mes trabajamos un área del desarrollo cognitivo y socioemocional, adaptada a la etapa de cada peque y no a su edad en el calendario.</p>
+    </div>
+    <div class="dev">
+      <ul class="areas">
+        <li style="color:var(--berry)"><i style="background:var(--berry)"></i><span style="color:var(--ink)">Seguimiento de instrucciones</span></li>
+        <li style="color:var(--leaf)"><i style="background:var(--leaf)"></i><span style="color:var(--ink)">Atención selectiva</span></li>
+        <li style="color:var(--blue)"><i style="background:var(--blue)"></i><span style="color:var(--ink)">Coordinación</span></li>
+        <li style="color:var(--sun)"><i style="background:var(--sun)"></i><span style="color:var(--ink)">Control de impulsos</span></li>
+        <li style="color:var(--berry)"><i style="background:var(--berry)"></i><span style="color:var(--ink)">Lenguaje</span></li>
+      </ul>
+      <div class="path">
+        <div class="step"><div class="num" style="background:var(--sun)">1</div><div class="card"><small style="color:#D98E12">Primer cuatrimestre</small><h3>Aculturación</h3><p>Tu peque se sumerge en la música: la escucha, la siente y la observa, sin que nadie le exija una respuesta correcta.</p></div></div>
+        <div class="step"><div class="num" style="background:var(--leaf)">2</div><div class="card"><small style="color:#5E9A22">Segundo cuatrimestre</small><h3>Imitación</h3><p>Empieza a imitar lo que escucha y a comunicarse con música.</p></div></div>
+        <div class="step"><div class="num" style="background:var(--blue)">3</div><div class="card"><small style="color:var(--blue)">Tercer cuatrimestre</small><h3>Asimilación</h3><p>Da sentido a lo que escucha y hasta crea sus propios sonidos.</p></div></div>
+        <p class="credit">Basado en la teoría del aprendizaje musical de Edwin Gordon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA TI -->
+<section class="band cream" id="para-ti" aria-labelledby="para-t">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow"><img src="img/note_orange.png" alt="" width="18" height="20">Para ti</span>
+      <h2 class="h2" id="para-t">Cuéntanos quién eres.</h2>
+      <p class="lead">Cada familia llega con dudas distintas. Elige la tuya.</p>
+    </div>
+    <div class="tablist" role="tablist" aria-label="Elige quién eres">
+      <button class="tab" role="tab" id="tab-mama" aria-controls="p-mama" aria-selected="true">Soy mamá</button>
+      <button class="tab" role="tab" id="tab-papa" aria-controls="p-papa" aria-selected="false" tabindex="-1">Soy papá</button>
+      <button class="tab" role="tab" id="tab-fam" aria-controls="p-fam" aria-selected="false" tabindex="-1">Soy abuela, abuelo, tía o tío</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-mama" aria-labelledby="tab-mama">
+      <figure class="pola" style="margin:0"><i class="tape" style="background:var(--berry)"></i><img src="img/mama-tul.webp" alt="Mamá juega con telas de colores junto a su peque" loading="lazy"><figcaption>aprendemos juntas</figcaption></figure>
+      <div class="tx">
+        <h3>Aquí no solo acompañas: aprendes con tu peque.</h3>
+        <p style="color:var(--ink-2)">Sabemos que quieres entender todo antes de decidir. Esto es lo que vive tu familia en Musaki:</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="#14A3D9"/><path d="M8 14.5 12.5 19 20.5 10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Juegos planeados por nuestras misses, con un objetivo de desarrollo en cada clase.</span></li>
+          <li><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="#92D050"/><path d="M8 14.5 12.5 19 20.5 10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Grupos de 6 peques para que cada uno reciba atención cercana.</span></li>
+          <li><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="#E4007D"/><path d="M8 14.5 12.5 19 20.5 10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Seguimiento individual de tu peque y reuniones de familias cada cuatrimestre para compartir avances.</span></li>
+          <li><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="#FFB132"/><path d="M8 14.5 12.5 19 20.5 10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cápsulas de acompañamiento en video para seguir la crianza en casa.</span></li>
+        </ul>
+        <div class="actions"><a class="btn btn-sun" href="#agendar" data-rol="mamá">Agendar clase muestra</a><a class="btn btn-ghost" href="#preguntas">Ver preguntas</a></div>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-papa" aria-labelledby="tab-papa" hidden>
+      <figure class="pola" style="margin:0"><i class="tape" style="background:var(--leaf)"></i><img src="img/papa-bebe.webp" alt="Papá baila con su bebé en brazos" loading="lazy" style="object-position:50% 40%"><figcaption>papá también juega</figcaption></figure>
+      <div class="tx">
+        <h3>Lo esencial, sin rodeos.</h3>
+        <div class="mini">
+          <div><b>Dónde</b><span>Plaza Murano, Av. Huayacán, Cancún</span></div>
+          <div><b>A qué hora</b><span>Mar y vie 4:00 p. m. · Sáb 11:00 a. m.</span></div>
+          <div><b>Qué llevar</b><span>Ropa cómoda, calcetitas antiderrapantes y termo con agua</span></div>
+          <div><b>Cuánto dura</b><span>1 hora, entras con tu peque</span></div>
+        </div>
+        <div><button class="btn btn-ghost" type="button" data-precios aria-expanded="false" aria-controls="precios-papa">Ver precios</button></div>
+        <div class="mini" id="precios-papa" hidden>
+          <div><b>Clase muestra</b><span>Gratis</span></div>
+          <div><b>Inscripción</b><span>$800, incluye kit de bienvenida</span></div>
+          <div><b>1 clase por semana</b><span>$1,400 al mes (sábados)</span></div>
+          <div><b>2 clases por semana</b><span>$2,500 al mes (martes y viernes)</span></div>
+        </div>
+        <div class="actions"><a class="btn btn-sun" href="#agendar" data-rol="papá">Agendar clase muestra</a></div>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-fam" aria-labelledby="tab-fam" hidden>
+      <figure class="pola" style="margin:0"><i class="tape" style="background:var(--sun)"></i><img src="img/circulo.webp" alt="Familias sentadas en círculo jugando con telas junto a sus peques" loading="lazy"><figcaption>hay lugar para ti</figcaption></figure>
+      <div class="tx">
+        <h3>¿Quieres regalarle música a tu peque?</h3>
+        <p style="color:var(--ink-2)">Muchas familias llegan a Musaki gracias a una abuela o una tía. No necesitas saber de música: solo acompañar. Pueden entrar hasta 2 adultos por peque, así que también hay lugar para ti.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="#14A3D9"/><path d="M8 14.5 12.5 19 20.5 10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mándale esta información a mamá o papá y agenden juntos.</span></li>
+          <li><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="#E4007D"/><path d="M8 14.5 12.5 19 20.5 10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>O agenda tú la clase muestra y cuéntanos quién acompañará a tu peque.</span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-wa" id="share-mama" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"/></svg>Compartir con mamá o papá</a>
+          <a class="btn btn-sun" href="#agendar" data-rol="abuela">Agendar yo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMUNIDAD + GALERÍA REAL -->
+<section class="band" aria-labelledby="com-t">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow"><img src="img/note_orange.png" alt="" width="18" height="20">Comunidad artística</span>
+      <h2 class="h2" id="com-t">Así se ven nuestras clases.</h2>
+      <p class="lead">Fotos de clases reales en Musaki: peques, misses y familias haciendo música juntos.</p>
+    </div>
+    <div class="gallery">
+      <figure class="pola" style="margin:0"><i class="tape" style="background:var(--blue)"></i><img src="img/paracaidas.webp" alt="Peques sentados en el paracaídas de colores mientras las familias lo mueven" loading="lazy"><figcaption>el paracaídas</figcaption></figure>
+      <figure class="pola" style="margin:0"><i class="tape" style="background:var(--berry)"></i><img src="img/aros-2.webp" alt="Papás y peques juegan con aros" loading="lazy"><figcaption>aros y ritmo</figcaption></figure>
+      <figure class="pola" style="margin:0"><i class="tape" style="background:var(--leaf)"></i><img src="img/familias.webp" alt="Familias sentadas en el piso tocando instrumentos" loading="lazy"><figcaption>en círculo</figcaption></figure>
+      <figure class="pola" style="margin:0"><i class="tape" style="background:var(--sun)"></i><img src="img/tul-nino.webp" alt="Niño baila con una tela amarilla" loading="lazy"><figcaption>telas y colores</figcaption></figure>
+    </div>
+    <div class="comm">
+      <article><div class="dot" style="background:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M14 20a4.5 4.5 0 0 1 7-3.7"/></svg></div><h3>Reuniones de familias</h3><p>Al cerrar cada cuatrimestre compartimos avances, dudas y experiencias en un diagnóstico colectivo.</p></article>
+      <article><div class="dot" style="background:var(--berry)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="14" height="14" rx="3"/><path d="m17 10 4-2v8l-4-2"/></svg></div><h3>Cápsulas de acompañamiento</h3><p>Videos para acompañar en casa lo que tu peque vive en clase.</p></article>
+      <article><div class="dot" style="background:var(--leaf)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><h3>Seguimiento individual</h3><p>Las misses observan a cada peque y platican contigo sobre su proceso.</p></article>
+    </div>
+    <p class="quote">En Musaki, educar es un acto colectivo y la música <span class="pill-hl blue">un camino</span> para crecer juntos.</p>
+  </div>
+</section>
+
+<!-- HORARIOS Y UBICACIÓN -->
+<div class="clouds-div" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 V36 Q50 6 110 32 Q160 2 220 30 Q280 8 330 34 Q390 0 450 30 Q510 6 560 34 Q620 4 680 30 Q740 8 790 34 Q850 0 910 30 Q970 6 1020 34 Q1080 4 1140 30 Q1180 14 1200 30 V60 Z" fill="#E7F6FC"/></svg></div>
+<section class="band sky" id="horarios" aria-labelledby="hor-t">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow"><img src="img/note_orange.png" alt="" width="18" height="20">Horarios y ubicación</span>
+      <h2 class="h2" id="hor-t">Te esperamos en <span class="pill-hl">Plaza Murano</span>.</h2>
+    </div>
+    <div class="visit">
+      <div class="box">
+        <h3>Horarios</h3>
+        <div class="slot rec"><div class="day" style="background:var(--blue)">Mar y vie</div><p><span class="star-b">★ Recomendado</span><br>4:00 a 5:00 p. m.<small>Grupo de dos clases por semana: más música y más práctica en casa.</small></p></div>
+        <div class="slot"><div class="day" style="background:var(--berry)">Sábados</div><p>11:00 a. m. a 12:00 p. m.<small>Grupo de una clase por semana</small></p></div>
+        <p style="color:var(--ink-2);font-size:15px">¿Ninguno te acomoda? Escríbenos y buscamos juntos un horario para tu familia.</p>
+        <div class="actions"><a class="btn btn-sun" href="#agendar">Elegir día de mi clase muestra</a></div>
+      </div>
+      <div class="box">
+        <h3>Cómo llegar</h3>
+        <div class="map" aria-hidden="true">
+          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="225" fill="#F4EFE3"/>
+            <path d="M-10 190 C80 170 140 210 230 190 S360 160 420 175 V240 H-10Z" fill="#9ADCF5"/>
+            <ellipse cx="70" cy="60" rx="70" ry="40" fill="#C7E8A6"/><ellipse cx="340" cy="120" rx="60" ry="42" fill="#C7E8A6"/>
+            <g stroke="#fff" stroke-linecap="round" fill="none"><path d="M-10 118 L410 100" stroke-width="26"/><path d="M130 -10 L160 240" stroke-width="16"/><path d="M290 -10 L275 240" stroke-width="12"/><path d="M-10 40 L410 30" stroke-width="10"/></g>
+            <path d="M-10 118 L410 100" stroke="#FFB132" stroke-width="2" stroke-dasharray="10 8" fill="none"/>
+            <text x="16" y="104" font-family="Poppins, sans-serif" font-weight="700" font-size="10" fill="#0B4A69" letter-spacing="2" transform="rotate(-2.4 16 104)">AV. HUAYACÁN</text>
+            <ellipse cx="200" cy="104" rx="26" ry="8" fill="none" stroke="#E4007D" stroke-width="2" opacity=".6"/>
+          </svg>
+          <svg class="pin" viewBox="0 0 62 88"><path d="M31 86 C31 86 3 52 3 30 C3 14 15 3 31 3 C47 3 59 14 59 30 C59 52 31 86 31 86Z" fill="#E4007D" stroke="#fff" stroke-width="4"/><circle cx="31" cy="30" r="17" fill="#fff"/><path d="M27 20 v15 a5 5 0 1 1 -2 -4 V22 l11 -3 v12 a5 5 0 1 1 -2 -4 v-9 z" fill="#FFB132"/></svg>
+        </div>
+        <p class="addr">Plaza Murano, Av. Huayacán<small>SMZA 313, MZA 217, Lt 6, Álamos I y II, 77533 Cancún, Q. R.</small></p>
+        <div class="actions"><a class="btn btn-ghost" href="https://maps.app.goo.gl/yN5vTqaL3KQhHwgw9" target="_blank" rel="noopener">Abrir en Google Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREGUNTAS -->
+<section class="band" id="preguntas" aria-labelledby="faq-t">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow"><img src="img/note_orange.png" alt="" width="18" height="20">Preguntas frecuentes</span>
+      <h2 class="h2" id="faq-t">Lo que más nos preguntan.</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq">
+        <details><summary>¿La clase muestra tiene costo?</summary><div class="a">No. Es <strong>gratis</strong> y sirve para que conozcan Musaki antes de decidir.</div></details>
+        <details><summary>¿Qué edad debe tener mi peque?</summary><div class="a">Recibimos peques de <strong>1 a 3 años</strong>. Trabajamos según la etapa de desarrollo de cada peque, no solo según su edad.</div></details>
+        <details><summary>¿Quién entra a la clase?</summary><div class="a">Tu peque y su adulto acompañante: mamá, papá, abuela, abuelo, tía o quien lo acompañe. Pueden entrar <strong>hasta 2 adultos por peque</strong> y participan toda la clase.</div></details>
+        <details><summary>¿Qué llevamos?</summary><div class="a">Ropa cómoda, <strong>calcetitas antiderrapantes</strong> y un termo con agua.</div></details>
+        <details><summary>¿Cuánto cuesta?</summary><div class="a">Inscripción de <strong>$800</strong> (incluye kit de bienvenida). Una clase a la semana, sábados: <strong>$1,400 al mes</strong>. Dos clases a la semana, martes y viernes: <strong>$2,500 al mes</strong>.</div></details>
+        <details><summary>¿Mi peque necesita saber algo de música?</summary><div class="a">Para nada, y tú tampoco. A esta edad la música se aprende conviviendo con ella: escuchándola, sintiéndola y jugando.</div></details>
+        <details><summary>¿En qué es diferente de la guardería o de la natación?</summary><div class="a">En Musaki <strong>aprenden en familia</strong>: tú participas activamente en la clase como parte del proceso, se respeta el desarrollo de cada peque y se fortalecen habilidades como convivir, esperar turnos y comunicarse.</div></details>
+        <details><summary>¿Y si no puedo en esos horarios?</summary><div class="a">Escríbenos por WhatsApp al <strong>55 5461 4560</strong> y buscamos juntos un horario que les acomode.</div></details>
+      </div>
+      <div class="bird-side" aria-hidden="true"><img src="img/kid.webp" alt="" width="520" height="490"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final" aria-labelledby="fin-t" id="final">
+  <div class="cloud" style="left:6%;top:40px;width:200px;height:90px;animation-duration:40s"><span style="left:0;top:40px;width:200px;height:50px;border-radius:30px"></span><span style="left:34px;top:4px;width:80px;height:80px"></span><span style="left:96px;top:18px;width:70px;height:70px"></span></div>
+  <div class="cloud" style="right:8%;top:90px;width:160px;height:72px;animation-duration:34s;animation-direction:reverse"><span style="left:0;top:32px;width:160px;height:40px;border-radius:24px"></span><span style="left:26px;top:2px;width:64px;height:64px"></span><span style="left:80px;top:14px;width:54px;height:54px"></span></div>
+  <div id="hearts" aria-hidden="true"></div>
+  <div class="mascots" aria-hidden="true"><img class="m-kid" src="img/kid.webp" alt="" width="520" height="490"><img class="m-note" src="img/note.webp" alt="" width="520" height="547"></div>
+  <div class="wrap">
+    <div class="logo-float">
+      <div class="logo-build" id="logo-build" role="img" aria-label="Logotipo de Musaki Comunidad Artística"></div>
+    </div>
+    <div class="logo-shadow" aria-hidden="true"></div>
+    <h2 id="fin-t">Ven a conocernos con tu peque.</h2>
+    <p>La primera clase es gratis. Te esperamos este <strong>martes o viernes a las 4:00 p. m.</strong> en Plaza Murano, con ropa cómoda y calcetitas antiderrapantes.</p>
+    <a class="wa-pill" id="wa-big" href="https://wa.me/525554614560" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#1FAF57" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.7-5.2A8.5 8.5 0 1 1 21 12Z"/><path d="M9.2 8.6c.3 2.6 2.4 4.9 5.2 5.4l1-1.2 1.8.8-.4 1.6c-3.8.4-7.6-3.3-7.3-7.2l1.6-.4.8 1.8-1.2 1"/></svg></span>
+      <div><b>WhatsApp</b><span>55 5461 4560</span></div>
+    </a>
+    <a class="btn btn-sun" href="#agendar">Agendar clase muestra gratis</a>
+    <button class="replay" type="button" id="replay">Ver de nuevo la animación del logo</button>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="flogo" src="img/logo_color.png" alt="Musaki Comunidad Artística" width="92" height="70">
+    <ul>
+      <li>Plaza Murano, Av. Huayacán, SMZA 313, MZA 217, Lt 6, Álamos I y II, 77533 Cancún, Q. R.</li>
+      <li>WhatsApp: <a href="https://wa.me/525554614560" target="_blank" rel="noopener">55 5461 4560</a> · <a href="https://www.instagram.com/musaki.comunidad" target="_blank" rel="noopener">Instagram @musaki.comunidad</a> · <a href="https://www.facebook.com/musaki.comunidad" target="_blank" rel="noopener">Facebook</a></li>
+      <li class="small">musaki.info@gmail.com · Educación musical en comunidad.</li>
+    </ul>
+    <div class="stripes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <div class="wa-tip" id="wa-tip" hidden><b>Miss Deya</b>¡Hola! ¿Agendamos tu clase muestra gratis?<button type="button" aria-label="Cerrar mensaje" id="wa-close">×</button></div>
+  <a class="wa-btn" id="wa-btn" href="https://wa.me/525554614560" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.7-5.2A8.5 8.5 0 1 1 21 12Z"/><path d="M9.2 8.6c.3 2.6 2.4 4.9 5.2 5.4l1-1.2 1.8.8-.4 1.6c-3.8.4-7.6-3.3-7.3-7.2l1.6-.4.8 1.8-1.2 1"/></svg>
+  </a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var PHONE = "525554614560";
+  var HORARIOS = [{dia:2,h:16,m:0,hora:"4:00 p. m."},{dia:5,h:16,m:0,hora:"4:00 p. m."},{dia:6,h:11,m:0,hora:"11:00 a. m."}];
+  function wa(text){ return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(text); }
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var general = "¡Hola! Quiero agendar la clase muestra gratis para mi peque.";
+  document.getElementById("wa-btn").href = wa(general);
+  document.getElementById("wa-big").href = wa(general);
+  var shareTxt = "Mira lo que encontré para nuestro peque: Musaki, clases de música para peques de 1 a 3 años en Plaza Murano, Cancún. Entramos con ellos a la clase y la clase muestra es gratis. Se agenda por WhatsApp al 55 5461 4560: https://wa.me/" + PHONE;
+  document.getElementById("share-mama").href = "https://wa.me/?text=" + encodeURIComponent(shareTxt);
+
+  /* Barra de progreso */
+  var prog = document.getElementById("progress");
+  function onScroll(){ var h = document.documentElement; var p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight); prog.style.setProperty("--p", p.toFixed(4)); }
+  addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+  /* Fechas próximas */
+  var fmtDia = new Intl.DateTimeFormat("es-MX", {weekday:"long"});
+  var fmtFecha = new Intl.DateTimeFormat("es-MX", {day:"numeric", month:"long"});
+  function proximas(n){
+    var out = [], now = new Date(), d = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    for (var i = 0; i < 28 && out.length < n; i++){
+      var day = new Date(d.getFullYear(), d.getMonth(), d.getDate() + i);
+      HORARIOS.forEach(function(s){
+        if (day.getDay() === s.dia){
+          var start = new Date(day.getFullYear(), day.getMonth(), day.getDate(), s.h, s.m);
+          if (start.getTime() - now.getTime() > 3 * 3600 * 1000) out.push({date:start, hora:s.hora});
+        }
+      });
+    }
+    return out.slice(0, n);
+  }
+  var cont = document.getElementById("f-fechas");
+  /* Martes y viernes primero (4 fechas, la primera preseleccionada); sábados al final (2 fechas) */
+  var todas = proximas(12);
+  var marVie = todas.filter(function(o){ return o.date.getDay() !== 6; }).slice(0, 4);
+  var sabados = todas.filter(function(o){ return o.date.getDay() === 6; }).slice(0, 2);
+  function chip(o, idx, rec){
+    var dia = fmtDia.format(o.date), fecha = fmtFecha.format(o.date);
+    var id = "f-fecha-" + idx;
+    var inp = document.createElement("input"); inp.type = "radio"; inp.name = "fecha"; inp.id = id; inp.value = dia + " " + fecha + " a las " + o.hora; inp.className = "chip-input";
+    var lab = document.createElement("label"); lab.htmlFor = id; lab.textContent = dia.charAt(0).toUpperCase() + dia.slice(1) + " " + fecha;
+    if (rec){ lab.className = "rec"; lab.setAttribute("aria-label", lab.textContent + ", " + o.hora + ", recomendado"); }
+    var sm = document.createElement("small"); sm.textContent = o.hora; lab.appendChild(sm);
+    cont.appendChild(inp); cont.appendChild(lab);
+    return inp;
+  }
+  var n = 0;
+  marVie.forEach(function(o, i){ var inp = chip(o, n++, true); if (i === 0) inp.checked = true; });
+  if (sabados.length){
+    var sep = document.createElement("span"); sep.className = "sep"; sep.textContent = "También hay lugar en sábado:"; cont.appendChild(sep);
+    sabados.forEach(function(o){ chip(o, n++, false); });
+  }
+  (function(){
+    var inp = document.createElement("input"); inp.type = "radio"; inp.name = "fecha"; inp.id = "f-fecha-otro"; inp.value = "otro"; inp.className = "chip-input";
+    var lab = document.createElement("label"); lab.htmlFor = "f-fecha-otro"; lab.textContent = "Otro día";
+    var sm = document.createElement("small"); sm.textContent = "Lo platicamos"; lab.appendChild(sm);
+    cont.appendChild(inp); cont.appendChild(lab);
+  })();
+
+  /* Formulario */
+  var form = document.getElementById("lead"), ok = document.getElementById("ok"), err = document.getElementById("f-err");
+  var rol = document.getElementById("f-rol"), acompWrap = document.getElementById("acomp-wrap");
+  function syncRol(){ var v = rol.value; acompWrap.hidden = (v === "mamá" || v === "papá"); }
+  rol.addEventListener("change", syncRol); syncRol();
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var nombre = form.nombre.value.trim(), peque = form.peque.value.trim(), edad = form.edad.value;
+    var sel = form.querySelector("input[name=fecha]:checked");
+    var faltan = [];
+    if (!nombre) faltan.push("tu nombre");
+    if (!peque) faltan.push("el nombre de tu peque");
+    if (!edad) faltan.push("su edad");
+    if (!sel) faltan.push("el día de la clase");
+    if (faltan.length){
+      err.textContent = "Nos falta " + faltan.join(", ").replace(/, ([^,]*)$/, " y $1") + ".";
+      err.hidden = false;
+      var first = !nombre ? form.nombre : !peque ? form.peque : !edad ? form.edad : cont.querySelector("input");
+      first.focus(); return;
+    }
+    err.hidden = true;
+    var r = rol.value, quien = r === "familiar" ? "familiar de " + peque : r + " de " + peque;
+    var msg = "¡Hola, miss Deya! Soy " + nombre + ", " + quien + " (" + edad + ").\n";
+    if (sel.value === "otro") msg += "Queremos agendar la clase muestra gratis, pero ninguno de los días publicados nos acomoda. ¿Qué otras opciones tienen?";
+    else msg += "Queremos agendar la clase muestra gratis para el " + sel.value + (/\.$/.test(sel.value) ? "" : ".") + " ¿Nos confirmas el lugar?";
+    if (!acompWrap.hidden){ var a = form.acomp.value; msg += a === "yo" ? "\nYo lo voy a acompañar." : a === "ambos" ? "\nVamos a ir juntos con su mamá o su papá." : "\nLo acompañará su mamá o su papá."; }
+    document.getElementById("ok-title").textContent = "¡Casi listo, " + nombre + "!";
+    document.getElementById("ok-msg").textContent = msg;
+    document.getElementById("ok-link").href = wa(msg);
+    form.hidden = true; ok.hidden = false;
+    document.getElementById("ok-link").focus();
+    celebrate();
+  });
+  document.getElementById("ok-back").addEventListener("click", function(){ ok.hidden = true; form.hidden = false; form.nombre.focus(); });
+  document.querySelectorAll("[data-rol]").forEach(function(a){
+    a.addEventListener("click", function(){ rol.value = a.getAttribute("data-rol"); syncRol(); setTimeout(function(){ form.nombre.focus({preventScroll:true}); }, 500); });
+  });
+  document.querySelectorAll("[data-precios]").forEach(function(b){
+    b.addEventListener("click", function(){
+      var p = document.getElementById(b.getAttribute("aria-controls"));
+      var open = p.hidden; p.hidden = !open; b.setAttribute("aria-expanded", String(open));
+      b.textContent = open ? "Ocultar precios" : "Ver precios";
+    });
+  });
+  document.querySelectorAll("[data-copy]").forEach(function(b){
+    b.addEventListener("click", function(){
+      var t = b.getAttribute("data-copy");
+      function done(){ b.textContent = "Copiado"; setTimeout(function(){ b.textContent = "Copiar número"; }, 1800); }
+      function fallback(){ var r = document.createRange(); r.selectNodeContents(document.getElementById("tel")); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Número seleccionado"; }
+      try { navigator.clipboard.writeText(t).then(done, fallback); } catch(_) { fallback(); }
+    });
+  });
+
+  /* Pestañas */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll("[role=tab]"));
+  function select(t){ tabs.forEach(function(x){ var on = x === t; x.setAttribute("aria-selected", String(on)); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute("aria-controls")).hidden = !on; }); }
+  tabs.forEach(function(t, i){
+    t.addEventListener("click", function(){ select(t); });
+    t.addEventListener("keydown", function(e){ var k = e.key, j = k === "ArrowRight" ? i + 1 : k === "ArrowLeft" ? i - 1 : null; if (j === null) return; e.preventDefault(); var n = tabs[(j + tabs.length) % tabs.length]; select(n); n.focus(); });
+  });
+
+  /* Video con sonido opcional */
+  var reel = document.getElementById("reel"), snd = document.getElementById("sound");
+  snd.addEventListener("click", function(){
+    reel.muted = !reel.muted;
+    if (!reel.muted){ reel.currentTime = 0; }
+    var p = reel.play(); if (p && p.catch) p.catch(function(){});
+    snd.querySelector("span").textContent = reel.muted ? "Activar sonido" : "Silenciar";
+  });
+
+  /* Xilófono */
+  var notas = [{n:"Do",f:523.25,c:"#E4007D"},{n:"Re",f:587.33,c:"#FF6FAE"},{n:"Mi",f:659.25,c:"#FFB132"},{n:"Fa",f:698.46,c:"#FFD27A"},{n:"Sol",f:783.99,c:"#92D050"},{n:"La",f:880.00,c:"#B9E28A"},{n:"Si",f:987.77,c:"#14A3D9"},{n:"Do",f:1046.5,c:"#7FD0F0"}];
+  var xilo = document.getElementById("xilo"), ctx = null;
+  function play(f){
+    try {
+      ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+      if (ctx.state === "suspended") ctx.resume();
+      var t = ctx.currentTime, g = ctx.createGain(), o1 = ctx.createOscillator(), o2 = ctx.createOscillator(), g2 = ctx.createGain();
+      o1.type = "sine"; o1.frequency.value = f; o2.type = "sine"; o2.frequency.value = f * 3.93; g2.gain.value = .18;
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(.55, t + .008); g.gain.exponentialRampToValueAtTime(0.0001, t + 1.4);
+      o1.connect(g); o2.connect(g2); g2.connect(g); g.connect(ctx.destination);
+      o1.start(t); o2.start(t); o1.stop(t + 1.5); o2.stop(t + .4);
+    } catch(_) {}
+  }
+  notas.forEach(function(nt, i){
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "xbar"; b.style.background = nt.c; b.style.height = (230 - i * 16) + "px";
+    b.setAttribute("aria-label", "Nota " + nt.n + (i === 7 ? " aguda" : "") + ", tecla " + (i + 1));
+    var s = document.createElement("span"); s.textContent = nt.n; b.appendChild(s);
+    b.addEventListener("pointerdown", function(){ hit(i); });
+    b.addEventListener("keydown", function(e){ if (e.key === "Enter" || e.key === " "){ e.preventDefault(); hit(i); } });
+    xilo.appendChild(b);
+  });
+  var bars = xilo.querySelectorAll(".xbar");
+  function hit(i){
+    play(notas[i].f);
+    var b = bars[i]; b.classList.add("hit"); setTimeout(function(){ b.classList.remove("hit"); }, 120);
+    if (reduce) return;
+    var img = document.createElement("img"); img.src = i % 2 ? "img/note_orange.png" : "img/note_white.png"; img.alt = ""; img.className = "fly-note";
+    if (i % 2 === 0) img.style.filter = "drop-shadow(0 0 2px #14A3D9) drop-shadow(0 0 1px #14A3D9)";
+    img.style.left = (b.offsetLeft + b.offsetWidth / 2 - 15) + "px"; img.style.top = (b.offsetTop + 10) + "px";
+    xilo.appendChild(img); setTimeout(function(){ img.remove(); }, 1150);
+  }
+  document.addEventListener("keydown", function(e){
+    if (e.target.closest && e.target.closest("input,select,textarea")) return;
+    var k = parseInt(e.key, 10); if (k >= 1 && k <= 8){ var r = xilo.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) hit(k - 1); }
+  });
+
+  /* ---------- Colibrí: vuela por el hero, deja notas y se posa junto al formulario ---------- */
+  var hero = document.getElementById("inicio"), bird = document.getElementById("colibri"), trail = document.getElementById("trail"), layer = document.getElementById("fly-layer");
+  var flying = false, perch = {x:0,y:0}, idleT = 0, raf = 0;
+  function heroPt(el, fx, fy){ var hr = hero.getBoundingClientRect(), r = el.getBoundingClientRect(); return {x: r.left - hr.left + r.width * fx, y: r.top - hr.top + r.height * fy}; }
+  function bw(){ return bird.offsetWidth || 150; }
+  function perchPoint(){
+    var card = document.getElementById("agendar"), wide = innerWidth > 940;
+    if (!wide) return {x: hero.clientWidth - bw() - 4, y: 4};
+    var p = heroPt(card, 0.02, 0);
+    return {x: p.x - bw() * 0.85, y: p.y - bw() * 0.55};
+  }
+  function place(x, y, flip, tilt){ bird.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px) scaleX(" + (flip ? -1 : 1) + ") rotate(" + (tilt || 0).toFixed(1) + "deg)"; }
+  function buildPath(from, to, loop){
+    var W = hero.clientWidth, H = hero.clientHeight;
+    var midX = Math.max(W * 0.2, Math.min(W * 0.42, to.x - 120)), midY = Math.min(H * 0.30, 320);
+    var d = "M" + from.x + " " + from.y + " C " + (W * 0.12) + " " + (from.y - 160) + ", " + (midX - 160) + " " + (midY + 180) + ", " + midX + " " + midY;
+    if (loop){ d += " C " + (midX + 150) + " " + (midY - 150) + ", " + (midX - 120) + " " + (midY - 190) + ", " + (midX - 40) + " " + (midY - 30); }
+    d += " C " + (midX + 60) + " " + (midY + 110) + ", " + (to.x - 140) + " " + (to.y + 140) + ", " + to.x + " " + to.y;
+    return d;
+  }
+  function spark(x, y){
+    var n = document.createElement("img"); n.src = Math.random() < .5 ? "img/note_orange.png" : "img/note_white.png"; n.alt = ""; n.className = "spark-note";
+    if (n.src.indexOf("white") > -1) n.style.filter = "drop-shadow(0 0 2px #14A3D9) drop-shadow(0 0 1px #14A3D9)";
+    n.style.left = x + "px"; n.style.top = y + "px"; n.style.setProperty("--dx", (Math.random() * 40 - 20).toFixed(0) + "px");
+    layer.appendChild(n); setTimeout(function(){ n.remove(); }, 1400);
+  }
+  function fly(from, loop){
+    if (reduce) return;
+    flying = true; cancelAnimationFrame(raf);
+    var to = perchPoint(); perch = to;
+    var d = buildPath(from, to, loop);
+    trail.setAttribute("d", d);
+    var len = trail.getTotalLength(), dur = loop ? 3600 : 2600, t0 = performance.now(), lastSpark = 0;
+    trail.style.transition = "none"; trail.style.opacity = ".9";
+    var bwH = bw() / 2;
+    function step(now){
+      var t = Math.min(1, (now - t0) / dur), e = t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      var L = e * len, p = trail.getPointAtLength(L), q = trail.getPointAtLength(Math.min(len, L + 4));
+      var dx = q.x - p.x, dy = q.y - p.y, flip = dx < -0.5, tilt = Math.max(-18, Math.min(18, Math.atan2(dy, Math.abs(dx) + .001) * 57));
+      place(p.x - bwH, p.y - bwH, flip, tilt);
+      revealTrail(L, len);
+      if (now - lastSpark > 140 && t < .97){ lastSpark = now; spark(p.x - 10, p.y + 10); }
+      if (t < 1) raf = requestAnimationFrame(step);
+      else { flying = false; idleT = performance.now(); trail.style.transition = "opacity 1.2s"; trail.style.opacity = "0"; raf = requestAnimationFrame(idle); }
+    }
+    raf = requestAnimationFrame(step);
+  }
+  // revela el rastro hasta L usando una máscara de trazo
+  var reveal = null;
+  function revealTrail(L, len){
+    if (!reveal){
+      var svg = trail.ownerSVGElement, ns = "http://www.w3.org/2000/svg";
+      var defs = document.createElementNS(ns, "defs"), m = document.createElementNS(ns, "mask");
+      m.setAttribute("id", "trail-mask"); m.setAttribute("maskUnits", "userSpaceOnUse");
+      reveal = document.createElementNS(ns, "path"); reveal.setAttribute("fill", "none"); reveal.setAttribute("stroke", "#fff"); reveal.setAttribute("stroke-width", "14"); reveal.setAttribute("stroke-linecap", "round");
+      m.appendChild(reveal); defs.appendChild(m); svg.insertBefore(defs, svg.firstChild);
+      trail.setAttribute("mask", "url(#trail-mask)");
+    }
+    reveal.setAttribute("d", trail.getAttribute("d"));
+    reveal.style.strokeDasharray = len + " " + len;
+    reveal.style.strokeDashoffset = (len - L).toFixed(1);
+  }
+  function idle(now){
+    if (flying) return;
+    var t = (now - idleT) / 1000;
+    var x = perch.x + Math.sin(t * 1.3) * 10, y = perch.y + Math.sin(t * 2.1) * 9;
+    place(x, y, false, Math.sin(t * 1.7) * 5);
+    if (Math.random() < .012) spark(x + bw() * .7, y + bw() * .2);
+    raf = requestAnimationFrame(idle);
+  }
+  function start(){
+    if (reduce){ var p = perchPoint(); place(p.x, p.y, false, 0); return; }
+    fly({x: -bw() - 40, y: hero.clientHeight * 0.18}, true);
+  }
+  bird.addEventListener("click", function(){
+    if (flying) return;
+    var W = hero.clientWidth;
+    fly({x: perch.x + bw() / 2, y: perch.y + bw() / 2}, true);
+  });
+  var rT = 0;
+  addEventListener("resize", function(){ clearTimeout(rT); rT = setTimeout(function(){ if (!flying){ perch = perchPoint(); } }, 150); });
+  // estado de reposo visible antes de la animación
+  (function(){ var p = perchPoint(); perch = p; place(p.x, p.y, false, 0); })();
+  if (document.readyState === "complete") setTimeout(start, 500); else addEventListener("load", function(){ setTimeout(start, 500); });
+
+  /* ---------- Logo estilo "kumori": burbujas → nota, colibrí entra volando, letras rebotan ---------- */
+  var P = {"note":[364,0,568,643],"bird":[1211,461,190,143],"tulip":[1183,615,62,74],"m":[0,694,289,221],"u":[330,695,192,221],"s":[554,694,155,224],"a":[730,695,223,223],"k":[999,616,162,299],"i":[1199,695,30,220],"tag":[0,945,1401,115]};
+  var W0 = 1401, H0 = 1060, lb = document.getElementById("logo-build");
+  function pct(v, t){ return (v / t * 100).toFixed(3) + "%"; }
+  function part(name, cls, extra){
+    var b = P[name], img = document.createElement("img");
+    img.src = "img/logo/" + name + ".png"; img.alt = ""; img.className = cls;
+    img.style.left = pct(b[0], W0); img.style.top = pct(b[1], H0); img.style.width = pct(b[2], W0); img.style.height = pct(b[3], H0);
+    if (extra) extra(img);
+    lb.appendChild(img);
+  }
+  var nb = P.note, ncx = (nb[0] + nb[2] / 2) / W0 * 100, ncy = (nb[1] + nb[3] / 2) / H0 * 100;
+  [[-14,12,9,0],[12,14,11,.15],[-2,-10,8,.3],[6,4,13,.42],[-8,-2,7,.55]].forEach(function(b, i){
+    var d = document.createElement("i"); d.className = "bub lb-bub";
+    var r = b[2];
+    d.style.left = (ncx + b[0] - r / 2) + "%"; d.style.top = (ncy + b[1] - r * 1.32 / 2) + "%"; d.style.width = r + "%"; d.style.height = (r * 1.32) + "%";
+    d.style.setProperty("--d", b[3] + "s"); d.style.setProperty("--d2", (b[3] * .3) + "s");
+    d.style.setProperty("--mx", (-b[0] * 4.2) + "px"); d.style.setProperty("--my", (-b[1] * 3.2) + "px");
+    lb.appendChild(d);
+  });
+  part("note", "lb-note");
+  part("bird", "lb-bird");
+  part("tulip", "lb-tulip");
+  ["m","u","s","a","k","i"].forEach(function(l, i){ part(l, "lb-l", function(img){ img.style.setProperty("--i", i); }); });
+  part("tag", "lb-tag");
+  function playLogo(){ if (reduce) return; lb.classList.remove("play"); void lb.offsetWidth; lb.classList.add("play"); }
+  document.getElementById("replay").addEventListener("click", playLogo);
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ playLogo(); startHearts(); io.disconnect(); } }); }, {threshold:.45});
+    io.observe(lb);
+  }
+
+  /* Corazones que suben en el cierre */
+  var heartsOn = false;
+  function heartSVG(c){ return '<svg viewBox="0 0 100 92"><path d="M50 88 C20 66 2 48 2 28 C2 12 14 2 28 2 C38 2 46 8 50 16 C54 8 62 2 72 2 C86 2 98 12 98 28 C98 48 80 66 50 88Z" fill="' + c + '" stroke="#fff" stroke-width="7"/><ellipse cx="28" cy="24" rx="11" ry="7" fill="#fff" opacity=".7" transform="rotate(-30 28 24)"/></svg>'; }
+  function startHearts(){
+    if (reduce || heartsOn) return; heartsOn = true;
+    var box = document.getElementById("hearts"), cols = ["#E4007D","#FF6FAE","#FFB132","#92D050","#14A3D9"];
+    for (var k = 0; k < 12; k++){
+      var h = document.createElement("div"); h.className = "heart"; h.innerHTML = heartSVG(cols[k % cols.length]);
+      h.style.left = (4 + Math.random() * 92) + "%"; h.style.width = (22 + Math.random() * 26) + "px";
+      h.style.animationDelay = (Math.random() * 6).toFixed(2) + "s"; h.style.animationDuration = (5 + Math.random() * 4).toFixed(2) + "s";
+      box.appendChild(h);
+    }
+  }
+  function celebrate(){
+    if (reduce) return;
+    var card = document.getElementById("agendar"), r = heroPt(card, .5, .2);
+    for (var k = 0; k < 10; k++) setTimeout(function(){ spark(r.x + (Math.random() * 200 - 100), r.y + Math.random() * 60); }, k * 60);
+    if (!flying) fly({x: perch.x + bw() / 2, y: perch.y + bw() / 2}, true);
+  }
+
+  /* Burbuja de WhatsApp */
+  var tip = document.getElementById("wa-tip"), closed = false;
+  try { closed = sessionStorage.getItem("musaki-tip") === "0"; } catch(_) {}
+  if (!closed) setTimeout(function(){ tip.hidden = false; }, 4000);
+  document.getElementById("wa-close").addEventListener("click", function(){ tip.hidden = true; try { sessionStorage.setItem("musaki-tip", "0"); } catch(_) {} });
+})();
+</script>
+
+</body></html>
